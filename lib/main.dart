@@ -1,3 +1,5 @@
+// ignore_for_file: no_logic_in_create_state
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +31,7 @@ class BookingPage extends StatefulWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
+        SizedBox(
           width: 1920,
           height: 5683,
           child: Stack(
@@ -56,7 +58,7 @@ class BookingPage extends StatefulWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
+                      SizedBox(
                         width: 1140,
                         height: 68,
                         child: Stack(
@@ -236,7 +238,7 @@ class BookingPage extends StatefulWidget {
                                                   clipBehavior: Clip.antiAlias,
                                                   decoration:
                                                       const BoxDecoration(),
-                                                  child: Row(
+                                                  child: const Row(
                                                     mainAxisSize:
                                                         MainAxisSize.min,
                                                     mainAxisAlignment:
@@ -246,9 +248,9 @@ class BookingPage extends StatefulWidget {
                                                         CrossAxisAlignment
                                                             .start,
                                                     children: [
-                                                      Container(
+                                                      SizedBox(
                                                         height: 20,
-                                                        child: const Row(
+                                                        child: Row(
                                                           mainAxisSize:
                                                               MainAxisSize.min,
                                                           mainAxisAlignment:
@@ -350,7 +352,7 @@ class BookingPage extends StatefulWidget {
                                       ),
                                     ),
                                     const SizedBox(width: 8),
-                                    Container(
+                                    SizedBox(
                                       child: Row(
                                         mainAxisSize: MainAxisSize.min,
                                         mainAxisAlignment:
@@ -456,7 +458,7 @@ class BookingPage extends StatefulWidget {
                                     ),
                                   ),
                                   const SizedBox(width: 8),
-                                  Container(
+                                  SizedBox(
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -536,7 +538,7 @@ class BookingPage extends StatefulWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -617,7 +619,7 @@ class BookingPage extends StatefulWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -629,7 +631,7 @@ class BookingPage extends StatefulWidget {
                                           height: 20,
                                           clipBehavior: Clip.antiAlias,
                                           decoration: const BoxDecoration(),
-                                          child: Row(
+                                          child: const Row(
                                             mainAxisSize: MainAxisSize.min,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
@@ -637,9 +639,9 @@ class BookingPage extends StatefulWidget {
                                                 CrossAxisAlignment.center,
                                             children: [
                                               Expanded(
-                                                child: Container(
+                                                child: SizedBox(
                                                   height: double.infinity,
-                                                  child: const Row(
+                                                  child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.min,
                                                     mainAxisAlignment:
@@ -699,7 +701,7 @@ class BookingPage extends StatefulWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -779,7 +781,7 @@ class BookingPage extends StatefulWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -860,7 +862,7 @@ class BookingPage extends StatefulWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       mainAxisAlignment:
@@ -1000,7 +1002,7 @@ class BookingPage extends StatefulWidget {
               Positioned(
                 left: 405,
                 top: 2139.50,
-                child: Container(
+                child: SizedBox(
                   width: 1110,
                   height: 3821.64,
                   child: Stack(
@@ -1008,14 +1010,14 @@ class BookingPage extends StatefulWidget {
                       Positioned(
                         left: 5,
                         top: -12.50,
-                        child: Container(
+                        child: SizedBox(
                           height: 276,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
+                              SizedBox(
                                 height: 60,
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -1072,14 +1074,14 @@ class BookingPage extends StatefulWidget {
                                   ],
                                 ),
                               ),
-                              Container(
+                              SizedBox(
                                 height: 216,
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
-                                    Container(
+                                    SizedBox(
                                       width: double.infinity,
                                       child: Row(
                                         mainAxisSize: MainAxisSize.min,
@@ -1100,7 +1102,7 @@ class BookingPage extends StatefulWidget {
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
                                               children: [
-                                                Container(
+                                                SizedBox(
                                                   height: 184,
                                                   child: Row(
                                                     mainAxisSize:
@@ -1127,8 +1129,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                          shadows: [
-                                                            const BoxShadow(
+                                                          shadows: const [
+                                                            BoxShadow(
                                                               color: Color(
                                                                   0x281A1A1A),
                                                               blurRadius: 8,
@@ -1167,7 +1169,7 @@ class BookingPage extends StatefulWidget {
                                                                       CrossAxisAlignment
                                                                           .center,
                                                                   children: [
-                                                                    Container(
+                                                                    SizedBox(
                                                                       width:
                                                                           131,
                                                                       height:
@@ -1295,7 +1297,7 @@ class BookingPage extends StatefulWidget {
                                                             const SizedBox(
                                                                 width: 199),
                                                             Expanded(
-                                                              child: Container(
+                                                              child: SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -1359,7 +1361,7 @@ class BookingPage extends StatefulWidget {
                                                   ),
                                                 ),
                                                 const SizedBox(width: 16),
-                                                Container(
+                                                SizedBox(
                                                   height: 184,
                                                   child: Row(
                                                     mainAxisSize:
@@ -1385,8 +1387,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                          shadows: [
-                                                            const BoxShadow(
+                                                          shadows: const [
+                                                            BoxShadow(
                                                               color: Color(
                                                                   0x281A1A1A),
                                                               blurRadius: 8,
@@ -1407,7 +1409,7 @@ class BookingPage extends StatefulWidget {
                                                                   .start,
                                                           children: [
                                                             Expanded(
-                                                              child: Container(
+                                                              child: SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -1419,7 +1421,7 @@ class BookingPage extends StatefulWidget {
                                                                       CrossAxisAlignment
                                                                           .center,
                                                                   children: [
-                                                                    Container(
+                                                                    SizedBox(
                                                                       width:
                                                                           370,
                                                                       height:
@@ -1596,8 +1598,8 @@ class BookingPage extends StatefulWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(18),
                                               ),
-                                              shadows: [
-                                                const BoxShadow(
+                                              shadows: const [
+                                                BoxShadow(
                                                   color: Color(0x281A1A1A),
                                                   blurRadius: 8,
                                                   offset: Offset(0, 2),
@@ -1673,7 +1675,7 @@ class BookingPage extends StatefulWidget {
                                       ),
                                     ),
                                     const SizedBox(height: 7),
-                                    Container(
+                                    SizedBox(
                                       width: double.infinity,
                                       child: Row(
                                         mainAxisSize: MainAxisSize.min,
@@ -1716,7 +1718,7 @@ class BookingPage extends StatefulWidget {
                       Positioned(
                         left: 5,
                         top: 332,
-                        child: Container(
+                        child: SizedBox(
                           width: 1100,
                           height: 301.39,
                           child: Stack(
@@ -1738,7 +1740,7 @@ class BookingPage extends StatefulWidget {
                               Positioned(
                                 left: -8,
                                 top: 48,
-                                child: Container(
+                                child: SizedBox(
                                   width: 1116,
                                   height: 253.39,
                                   child: Stack(
@@ -1758,7 +1760,7 @@ class BookingPage extends StatefulWidget {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Container(
+                                              SizedBox(
                                                 height: 262.39,
                                                 child: Row(
                                                   mainAxisSize:
@@ -1768,7 +1770,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -1779,7 +1781,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -1935,7 +1937,7 @@ class BookingPage extends StatefulWidget {
                                                 ),
                                               ),
                                               const SizedBox(width: 16),
-                                              Container(
+                                              SizedBox(
                                                 height: 262.39,
                                                 child: Row(
                                                   mainAxisSize:
@@ -1945,7 +1947,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -1956,7 +1958,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -2112,7 +2114,7 @@ class BookingPage extends StatefulWidget {
                                                 ),
                                               ),
                                               const SizedBox(width: 16),
-                                              Container(
+                                              SizedBox(
                                                 height: 262.39,
                                                 child: Row(
                                                   mainAxisSize:
@@ -2122,7 +2124,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -2133,7 +2135,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -2289,7 +2291,7 @@ class BookingPage extends StatefulWidget {
                                                 ),
                                               ),
                                               const SizedBox(width: 16),
-                                              Container(
+                                              SizedBox(
                                                 height: 262.39,
                                                 child: Row(
                                                   mainAxisSize:
@@ -2299,7 +2301,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -2310,7 +2312,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -2480,8 +2482,8 @@ class BookingPage extends StatefulWidget {
                                               borderRadius:
                                                   BorderRadius.circular(18),
                                             ),
-                                            shadows: [
-                                              const BoxShadow(
+                                            shadows: const [
+                                              BoxShadow(
                                                 color: Color(0x281A1A1A),
                                                 blurRadius: 8,
                                                 offset: Offset(0, 2),
@@ -2566,14 +2568,14 @@ class BookingPage extends StatefulWidget {
                       Positioned(
                         left: 5,
                         top: 669.89,
-                        child: Container(
+                        child: SizedBox(
                           height: 631.50,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
+                              SizedBox(
                                 height: 60,
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -2631,7 +2633,7 @@ class BookingPage extends StatefulWidget {
                                 ),
                               ),
                               const SizedBox(height: 16),
-                              Container(
+                              SizedBox(
                                 width: 1100,
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
@@ -2658,7 +2660,7 @@ class BookingPage extends StatefulWidget {
                                             CrossAxisAlignment.center,
                                         children: [
                                           Expanded(
-                                            child: Container(
+                                            child: SizedBox(
                                               height: double.infinity,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -2855,7 +2857,7 @@ class BookingPage extends StatefulWidget {
                                             CrossAxisAlignment.center,
                                         children: [
                                           Expanded(
-                                            child: Container(
+                                            child: SizedBox(
                                               height: double.infinity,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -3037,7 +3039,7 @@ class BookingPage extends StatefulWidget {
                                 ),
                               ),
                               const SizedBox(height: 16),
-                              Container(
+                              SizedBox(
                                 width: 1100,
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
@@ -3064,7 +3066,7 @@ class BookingPage extends StatefulWidget {
                                             CrossAxisAlignment.center,
                                         children: [
                                           Expanded(
-                                            child: Container(
+                                            child: SizedBox(
                                               height: double.infinity,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -3263,7 +3265,7 @@ class BookingPage extends StatefulWidget {
                                             CrossAxisAlignment.center,
                                         children: [
                                           Expanded(
-                                            child: Container(
+                                            child: SizedBox(
                                               height: double.infinity,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -3354,9 +3356,8 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .center,
                                                             children: [
-                                                              Container(
-                                                                child:
-                                                                    const Row(
+                                                              const SizedBox(
+                                                                child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
                                                                           .min,
@@ -3457,7 +3458,7 @@ class BookingPage extends StatefulWidget {
                                             CrossAxisAlignment.center,
                                         children: [
                                           Expanded(
-                                            child: Container(
+                                            child: SizedBox(
                                               height: double.infinity,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -3653,7 +3654,7 @@ class BookingPage extends StatefulWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Container(
+                              SizedBox(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -3710,7 +3711,7 @@ class BookingPage extends StatefulWidget {
                                 ),
                               ),
                               const SizedBox(height: 8),
-                              Container(
+                              SizedBox(
                                 width: 1116,
                                 height: 228.50,
                                 child: Stack(
@@ -3730,7 +3731,7 @@ class BookingPage extends StatefulWidget {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            Container(
+                                            SizedBox(
                                               height: 212.50,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -3739,7 +3740,7 @@ class BookingPage extends StatefulWidget {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
+                                                  SizedBox(
                                                     width: 170,
                                                     height: 212.50,
                                                     child: Stack(
@@ -3791,7 +3792,7 @@ class BookingPage extends StatefulWidget {
                                                                   CrossAxisAlignment
                                                                       .center,
                                                               children: [
-                                                                Container(
+                                                                SizedBox(
                                                                   width: double
                                                                       .infinity,
                                                                   child: Row(
@@ -3884,7 +3885,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -3950,7 +3951,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 212.50,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -3959,7 +3960,7 @@ class BookingPage extends StatefulWidget {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
+                                                  SizedBox(
                                                     width: 170,
                                                     height: 212.50,
                                                     child: Stack(
@@ -4011,7 +4012,7 @@ class BookingPage extends StatefulWidget {
                                                                   CrossAxisAlignment
                                                                       .center,
                                                               children: [
-                                                                Container(
+                                                                SizedBox(
                                                                   width: double
                                                                       .infinity,
                                                                   child: Row(
@@ -4104,7 +4105,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -4170,7 +4171,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 212.50,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -4179,7 +4180,7 @@ class BookingPage extends StatefulWidget {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
+                                                  SizedBox(
                                                     width: 170,
                                                     height: 212.50,
                                                     child: Stack(
@@ -4231,7 +4232,7 @@ class BookingPage extends StatefulWidget {
                                                                   CrossAxisAlignment
                                                                       .center,
                                                               children: [
-                                                                Container(
+                                                                SizedBox(
                                                                   width: double
                                                                       .infinity,
                                                                   child: Row(
@@ -4324,7 +4325,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -4390,7 +4391,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 212.50,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -4399,7 +4400,7 @@ class BookingPage extends StatefulWidget {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
+                                                  SizedBox(
                                                     width: 170,
                                                     height: 212.50,
                                                     child: Stack(
@@ -4451,7 +4452,7 @@ class BookingPage extends StatefulWidget {
                                                                   CrossAxisAlignment
                                                                       .center,
                                                               children: [
-                                                                Container(
+                                                                SizedBox(
                                                                   width: double
                                                                       .infinity,
                                                                   child: Row(
@@ -4544,7 +4545,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -4610,7 +4611,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 212.50,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -4619,7 +4620,7 @@ class BookingPage extends StatefulWidget {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
+                                                  SizedBox(
                                                     width: 170,
                                                     height: 212.50,
                                                     child: Stack(
@@ -4671,7 +4672,7 @@ class BookingPage extends StatefulWidget {
                                                                   CrossAxisAlignment
                                                                       .center,
                                                               children: [
-                                                                Container(
+                                                                SizedBox(
                                                                   width: double
                                                                       .infinity,
                                                                   child: Row(
@@ -4764,7 +4765,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -4830,7 +4831,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 212.50,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -4839,7 +4840,7 @@ class BookingPage extends StatefulWidget {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
+                                                  SizedBox(
                                                     width: 170,
                                                     height: 212.50,
                                                     child: Stack(
@@ -4891,7 +4892,7 @@ class BookingPage extends StatefulWidget {
                                                                   CrossAxisAlignment
                                                                       .center,
                                                               children: [
-                                                                Container(
+                                                                SizedBox(
                                                                   width: double
                                                                       .infinity,
                                                                   child: Row(
@@ -4984,7 +4985,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -5064,8 +5065,8 @@ class BookingPage extends StatefulWidget {
                                             borderRadius:
                                                 BorderRadius.circular(18),
                                           ),
-                                          shadows: [
-                                            const BoxShadow(
+                                          shadows: const [
+                                            BoxShadow(
                                               color: Color(0x281A1A1A),
                                               blurRadius: 8,
                                               offset: Offset(0, 2),
@@ -5146,7 +5147,7 @@ class BookingPage extends StatefulWidget {
                       Positioned(
                         left: 5,
                         top: 1650.39,
-                        child: Container(
+                        child: SizedBox(
                           width: 1100,
                           height: 315,
                           child: Stack(
@@ -5154,7 +5155,7 @@ class BookingPage extends StatefulWidget {
                               Positioned(
                                 left: 0,
                                 top: -12.50,
-                                child: Container(
+                                child: SizedBox(
                                   height: 60,
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
@@ -5368,7 +5369,7 @@ class BookingPage extends StatefulWidget {
                                                         Clip.antiAlias,
                                                     decoration:
                                                         const BoxDecoration(),
-                                                    child: Row(
+                                                    child: const Row(
                                                       mainAxisSize:
                                                           MainAxisSize.min,
                                                       mainAxisAlignment:
@@ -5379,10 +5380,10 @@ class BookingPage extends StatefulWidget {
                                                               .center,
                                                       children: [
                                                         Expanded(
-                                                          child: Container(
+                                                          child: SizedBox(
                                                             height:
                                                                 double.infinity,
-                                                            child: const Row(
+                                                            child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
                                                                       .min,
@@ -5570,7 +5571,7 @@ class BookingPage extends StatefulWidget {
                                                         Clip.antiAlias,
                                                     decoration:
                                                         const BoxDecoration(),
-                                                    child: Row(
+                                                    child: const Row(
                                                       mainAxisSize:
                                                           MainAxisSize.min,
                                                       mainAxisAlignment:
@@ -5580,9 +5581,9 @@ class BookingPage extends StatefulWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           height: 16,
-                                                          child: const Row(
+                                                          child: Row(
                                                             mainAxisSize:
                                                                 MainAxisSize
                                                                     .min,
@@ -5949,7 +5950,7 @@ class BookingPage extends StatefulWidget {
                               Positioned(
                                 left: -8,
                                 top: 136,
-                                child: Container(
+                                child: SizedBox(
                                   width: 1116,
                                   height: 179,
                                   child: Stack(
@@ -5969,7 +5970,7 @@ class BookingPage extends StatefulWidget {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Container(
+                                              SizedBox(
                                                 height: 188,
                                                 child: Row(
                                                   mainAxisSize:
@@ -5979,7 +5980,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -5990,7 +5991,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -6146,7 +6147,7 @@ class BookingPage extends StatefulWidget {
                                                 ),
                                               ),
                                               const SizedBox(width: 16),
-                                              Container(
+                                              SizedBox(
                                                 height: 188,
                                                 child: Row(
                                                   mainAxisSize:
@@ -6156,7 +6157,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -6167,7 +6168,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -6323,7 +6324,7 @@ class BookingPage extends StatefulWidget {
                                                 ),
                                               ),
                                               const SizedBox(width: 16),
-                                              Container(
+                                              SizedBox(
                                                 height: 188,
                                                 child: Row(
                                                   mainAxisSize:
@@ -6333,7 +6334,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -6344,7 +6345,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -6500,7 +6501,7 @@ class BookingPage extends StatefulWidget {
                                                 ),
                                               ),
                                               const SizedBox(width: 16),
-                                              Container(
+                                              SizedBox(
                                                 height: 188,
                                                 child: Row(
                                                   mainAxisSize:
@@ -6510,7 +6511,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -6521,7 +6522,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -6677,7 +6678,7 @@ class BookingPage extends StatefulWidget {
                                                 ),
                                               ),
                                               const SizedBox(width: 16),
-                                              Container(
+                                              SizedBox(
                                                 height: 188,
                                                 child: Row(
                                                   mainAxisSize:
@@ -6687,7 +6688,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -6698,7 +6699,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -6854,7 +6855,7 @@ class BookingPage extends StatefulWidget {
                                                 ),
                                               ),
                                               const SizedBox(width: 16),
-                                              Container(
+                                              SizedBox(
                                                 height: 188,
                                                 child: Row(
                                                   mainAxisSize:
@@ -6864,7 +6865,7 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       child: Column(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
@@ -6875,7 +6876,7 @@ class BookingPage extends StatefulWidget {
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Container(
+                                                          SizedBox(
                                                             child: Row(
                                                               mainAxisSize:
                                                                   MainAxisSize
@@ -7045,8 +7046,8 @@ class BookingPage extends StatefulWidget {
                                               borderRadius:
                                                   BorderRadius.circular(18),
                                             ),
-                                            shadows: [
-                                              const BoxShadow(
+                                            shadows: const [
+                                              BoxShadow(
                                                 color: Color(0x281A1A1A),
                                                 blurRadius: 8,
                                                 offset: Offset(0, 2),
@@ -7139,7 +7140,7 @@ class BookingPage extends StatefulWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Container(
+                              SizedBox(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -7196,7 +7197,7 @@ class BookingPage extends StatefulWidget {
                                 ),
                               ),
                               const SizedBox(height: 8),
-                              Container(
+                              SizedBox(
                                 width: 1116,
                                 height: 340.39,
                                 child: Stack(
@@ -7216,7 +7217,7 @@ class BookingPage extends StatefulWidget {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            Container(
+                                            SizedBox(
                                               height: 324.39,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -7239,8 +7240,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                      shadows: [
-                                                        const BoxShadow(
+                                                      shadows: const [
+                                                        BoxShadow(
                                                           color:
                                                               Color(0x281A1A1A),
                                                           blurRadius: 8,
@@ -7259,7 +7260,7 @@ class BookingPage extends StatefulWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -7271,7 +7272,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -7336,7 +7337,7 @@ class BookingPage extends StatefulWidget {
                                                                         CrossAxisAlignment
                                                                             .start,
                                                                     children: [
-                                                                      Container(
+                                                                      SizedBox(
                                                                         child:
                                                                             Column(
                                                                           mainAxisSize:
@@ -7347,7 +7348,7 @@ class BookingPage extends StatefulWidget {
                                                                               CrossAxisAlignment.start,
                                                                           children: [
                                                                             Expanded(
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 width: 247,
                                                                                 child: Column(
                                                                                   mainAxisSize: MainAxisSize.min,
@@ -7402,7 +7403,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -7513,7 +7514,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 324.39,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -7536,8 +7537,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                      shadows: [
-                                                        const BoxShadow(
+                                                      shadows: const [
+                                                        BoxShadow(
                                                           color:
                                                               Color(0x281A1A1A),
                                                           blurRadius: 8,
@@ -7556,7 +7557,7 @@ class BookingPage extends StatefulWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -7568,7 +7569,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -7633,7 +7634,7 @@ class BookingPage extends StatefulWidget {
                                                                         CrossAxisAlignment
                                                                             .start,
                                                                     children: [
-                                                                      Container(
+                                                                      SizedBox(
                                                                         child:
                                                                             Column(
                                                                           mainAxisSize:
@@ -7644,7 +7645,7 @@ class BookingPage extends StatefulWidget {
                                                                               CrossAxisAlignment.start,
                                                                           children: [
                                                                             Expanded(
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 width: 247,
                                                                                 child: Column(
                                                                                   mainAxisSize: MainAxisSize.min,
@@ -7699,7 +7700,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -7810,7 +7811,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 324.39,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -7833,8 +7834,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                      shadows: [
-                                                        const BoxShadow(
+                                                      shadows: const [
+                                                        BoxShadow(
                                                           color:
                                                               Color(0x281A1A1A),
                                                           blurRadius: 8,
@@ -7853,7 +7854,7 @@ class BookingPage extends StatefulWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -7865,7 +7866,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -7930,7 +7931,7 @@ class BookingPage extends StatefulWidget {
                                                                         CrossAxisAlignment
                                                                             .start,
                                                                     children: [
-                                                                      Container(
+                                                                      SizedBox(
                                                                         child:
                                                                             Column(
                                                                           mainAxisSize:
@@ -7941,7 +7942,7 @@ class BookingPage extends StatefulWidget {
                                                                               CrossAxisAlignment.start,
                                                                           children: [
                                                                             Expanded(
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 width: 247,
                                                                                 child: Column(
                                                                                   mainAxisSize: MainAxisSize.min,
@@ -7996,7 +7997,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -8107,7 +8108,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 324.39,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -8130,8 +8131,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                      shadows: [
-                                                        const BoxShadow(
+                                                      shadows: const [
+                                                        BoxShadow(
                                                           color:
                                                               Color(0x281A1A1A),
                                                           blurRadius: 8,
@@ -8150,7 +8151,7 @@ class BookingPage extends StatefulWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -8162,7 +8163,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -8227,7 +8228,7 @@ class BookingPage extends StatefulWidget {
                                                                         CrossAxisAlignment
                                                                             .start,
                                                                     children: [
-                                                                      Container(
+                                                                      SizedBox(
                                                                         child:
                                                                             Column(
                                                                           mainAxisSize:
@@ -8238,7 +8239,7 @@ class BookingPage extends StatefulWidget {
                                                                               CrossAxisAlignment.start,
                                                                           children: [
                                                                             Expanded(
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 width: 247,
                                                                                 child: Column(
                                                                                   mainAxisSize: MainAxisSize.min,
@@ -8293,7 +8294,7 @@ class BookingPage extends StatefulWidget {
                                                                                 ),
                                                                               ),
                                                                             ),
-                                                                            Container(
+                                                                            SizedBox(
                                                                               child: Row(
                                                                                 mainAxisSize: MainAxisSize.min,
                                                                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -8418,8 +8419,8 @@ class BookingPage extends StatefulWidget {
                                             borderRadius:
                                                 BorderRadius.circular(18),
                                           ),
-                                          shadows: [
-                                            const BoxShadow(
+                                          shadows: const [
+                                            BoxShadow(
                                               color: Color(0x281A1A1A),
                                               blurRadius: 8,
                                               offset: Offset(0, 2),
@@ -8500,14 +8501,14 @@ class BookingPage extends StatefulWidget {
                       Positioned(
                         left: 5,
                         top: 2442.28,
-                        child: Container(
+                        child: SizedBox(
                           height: 430,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Container(
+                              SizedBox(
                                 width: 1100,
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
@@ -8553,7 +8554,7 @@ class BookingPage extends StatefulWidget {
                                 ),
                               ),
                               const SizedBox(height: 16),
-                              Container(
+                              SizedBox(
                                 width: 1100,
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
@@ -8852,7 +8853,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Column(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -9031,7 +9032,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Column(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -9131,8 +9132,8 @@ class BookingPage extends StatefulWidget {
                                           borderRadius:
                                               BorderRadius.circular(16),
                                         ),
-                                        shadows: [
-                                          const BoxShadow(
+                                        shadows: const [
+                                          BoxShadow(
                                             color: Color(0x281A1A1A),
                                             blurRadius: 8,
                                             offset: Offset(0, 2),
@@ -9191,7 +9192,7 @@ class BookingPage extends StatefulWidget {
                       Positioned(
                         left: -3,
                         top: 2896.28,
-                        child: Container(
+                        child: SizedBox(
                           height: 430.39,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
@@ -9260,7 +9261,7 @@ class BookingPage extends StatefulWidget {
                                 ),
                               ),
                               const SizedBox(height: 8),
-                              Container(
+                              SizedBox(
                                 width: 1116,
                                 height: 382.39,
                                 child: Stack(
@@ -9280,7 +9281,7 @@ class BookingPage extends StatefulWidget {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            Container(
+                                            SizedBox(
                                               height: 366.39,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -9303,8 +9304,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                      shadows: [
-                                                        const BoxShadow(
+                                                      shadows: const [
+                                                        BoxShadow(
                                                           color:
                                                               Color(0x281A1A1A),
                                                           blurRadius: 8,
@@ -9323,7 +9324,7 @@ class BookingPage extends StatefulWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -9335,7 +9336,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -9397,7 +9398,7 @@ class BookingPage extends StatefulWidget {
                                                                         CrossAxisAlignment
                                                                             .start,
                                                                     children: [
-                                                                      Container(
+                                                                      SizedBox(
                                                                         width:
                                                                             247,
                                                                         height:
@@ -9408,20 +9409,20 @@ class BookingPage extends StatefulWidget {
                                                                             Positioned(
                                                                               left: 0,
                                                                               top: 0,
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.min,
                                                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                   children: [
-                                                                                    Container(
+                                                                                    SizedBox(
                                                                                       child: Column(
                                                                                         mainAxisSize: MainAxisSize.min,
                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                                                         children: [
                                                                                           Expanded(
-                                                                                            child: Container(
+                                                                                            child: SizedBox(
                                                                                               width: 247,
                                                                                               child: Column(
                                                                                                 mainAxisSize: MainAxisSize.min,
@@ -9476,7 +9477,7 @@ class BookingPage extends StatefulWidget {
                                                                                               ),
                                                                                             ),
                                                                                           ),
-                                                                                          Container(
+                                                                                          SizedBox(
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.min,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -9580,7 +9581,7 @@ class BookingPage extends StatefulWidget {
                                                                             Positioned(
                                                                               left: 138.70,
                                                                               top: 112,
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.min,
                                                                                   mainAxisAlignment: MainAxisAlignment.end,
@@ -9658,7 +9659,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 366.39,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -9681,8 +9682,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                      shadows: [
-                                                        const BoxShadow(
+                                                      shadows: const [
+                                                        BoxShadow(
                                                           color:
                                                               Color(0x281A1A1A),
                                                           blurRadius: 8,
@@ -9701,7 +9702,7 @@ class BookingPage extends StatefulWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -9713,7 +9714,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -9775,7 +9776,7 @@ class BookingPage extends StatefulWidget {
                                                                         CrossAxisAlignment
                                                                             .start,
                                                                     children: [
-                                                                      Container(
+                                                                      SizedBox(
                                                                         width:
                                                                             247,
                                                                         height:
@@ -9786,20 +9787,20 @@ class BookingPage extends StatefulWidget {
                                                                             Positioned(
                                                                               left: 0,
                                                                               top: 0,
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.min,
                                                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                   children: [
-                                                                                    Container(
+                                                                                    SizedBox(
                                                                                       child: Column(
                                                                                         mainAxisSize: MainAxisSize.min,
                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                                                         children: [
                                                                                           Expanded(
-                                                                                            child: Container(
+                                                                                            child: SizedBox(
                                                                                               width: 247,
                                                                                               child: Column(
                                                                                                 mainAxisSize: MainAxisSize.min,
@@ -9854,7 +9855,7 @@ class BookingPage extends StatefulWidget {
                                                                                               ),
                                                                                             ),
                                                                                           ),
-                                                                                          Container(
+                                                                                          SizedBox(
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.min,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -9958,7 +9959,7 @@ class BookingPage extends StatefulWidget {
                                                                             Positioned(
                                                                               left: 138.70,
                                                                               top: 112,
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.min,
                                                                                   mainAxisAlignment: MainAxisAlignment.end,
@@ -10036,7 +10037,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 366.39,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -10059,8 +10060,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                      shadows: [
-                                                        const BoxShadow(
+                                                      shadows: const [
+                                                        BoxShadow(
                                                           color:
                                                               Color(0x281A1A1A),
                                                           blurRadius: 8,
@@ -10079,7 +10080,7 @@ class BookingPage extends StatefulWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -10091,7 +10092,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -10153,7 +10154,7 @@ class BookingPage extends StatefulWidget {
                                                                         CrossAxisAlignment
                                                                             .start,
                                                                     children: [
-                                                                      Container(
+                                                                      SizedBox(
                                                                         width:
                                                                             247,
                                                                         height:
@@ -10164,20 +10165,20 @@ class BookingPage extends StatefulWidget {
                                                                             Positioned(
                                                                               left: 0,
                                                                               top: 0,
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.min,
                                                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                   children: [
-                                                                                    Container(
+                                                                                    SizedBox(
                                                                                       child: Column(
                                                                                         mainAxisSize: MainAxisSize.min,
                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                                                         children: [
                                                                                           Expanded(
-                                                                                            child: Container(
+                                                                                            child: SizedBox(
                                                                                               width: 247,
                                                                                               child: Column(
                                                                                                 mainAxisSize: MainAxisSize.min,
@@ -10232,7 +10233,7 @@ class BookingPage extends StatefulWidget {
                                                                                               ),
                                                                                             ),
                                                                                           ),
-                                                                                          Container(
+                                                                                          SizedBox(
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.min,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -10336,7 +10337,7 @@ class BookingPage extends StatefulWidget {
                                                                             Positioned(
                                                                               left: 138.70,
                                                                               top: 112,
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.min,
                                                                                   mainAxisAlignment: MainAxisAlignment.end,
@@ -10414,7 +10415,7 @@ class BookingPage extends StatefulWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 16),
-                                            Container(
+                                            SizedBox(
                                               height: 366.39,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
@@ -10437,8 +10438,8 @@ class BookingPage extends StatefulWidget {
                                                                   BorderRadius
                                                                       .circular(
                                                                           8)),
-                                                      shadows: [
-                                                        const BoxShadow(
+                                                      shadows: const [
+                                                        BoxShadow(
                                                           color:
                                                               Color(0x281A1A1A),
                                                           blurRadius: 8,
@@ -10457,7 +10458,7 @@ class BookingPage extends StatefulWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -10469,7 +10470,7 @@ class BookingPage extends StatefulWidget {
                                                                 CrossAxisAlignment
                                                                     .start,
                                                             children: [
-                                                              Container(
+                                                              SizedBox(
                                                                 child: Row(
                                                                   mainAxisSize:
                                                                       MainAxisSize
@@ -10531,7 +10532,7 @@ class BookingPage extends StatefulWidget {
                                                                         CrossAxisAlignment
                                                                             .start,
                                                                     children: [
-                                                                      Container(
+                                                                      SizedBox(
                                                                         width:
                                                                             247,
                                                                         height:
@@ -10542,20 +10543,20 @@ class BookingPage extends StatefulWidget {
                                                                             Positioned(
                                                                               left: 0,
                                                                               top: 0,
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.min,
                                                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                   children: [
-                                                                                    Container(
+                                                                                    SizedBox(
                                                                                       child: Column(
                                                                                         mainAxisSize: MainAxisSize.min,
                                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                         crossAxisAlignment: CrossAxisAlignment.start,
                                                                                         children: [
                                                                                           Expanded(
-                                                                                            child: Container(
+                                                                                            child: SizedBox(
                                                                                               width: 247,
                                                                                               child: Column(
                                                                                                 mainAxisSize: MainAxisSize.min,
@@ -10619,7 +10620,7 @@ class BookingPage extends StatefulWidget {
                                                                                               ),
                                                                                             ),
                                                                                           ),
-                                                                                          Container(
+                                                                                          SizedBox(
                                                                                             child: Row(
                                                                                               mainAxisSize: MainAxisSize.min,
                                                                                               mainAxisAlignment: MainAxisAlignment.start,
@@ -10723,7 +10724,7 @@ class BookingPage extends StatefulWidget {
                                                                             Positioned(
                                                                               left: 138.70,
                                                                               top: 112,
-                                                                              child: Container(
+                                                                              child: SizedBox(
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.min,
                                                                                   mainAxisAlignment: MainAxisAlignment.end,
@@ -10815,8 +10816,8 @@ class BookingPage extends StatefulWidget {
                                             borderRadius:
                                                 BorderRadius.circular(18),
                                           ),
-                                          shadows: [
-                                            const BoxShadow(
+                                          shadows: const [
+                                            BoxShadow(
                                               color: Color(0x281A1A1A),
                                               blurRadius: 8,
                                               offset: Offset(0, 2),
@@ -10918,7 +10919,7 @@ class BookingPage extends StatefulWidget {
                               Positioned(
                                 left: 25,
                                 top: 25,
-                                child: Container(
+                                child: SizedBox(
                                   width: 160,
                                   child: Row(
                                     mainAxisSize: MainAxisSize.min,
@@ -11172,7 +11173,7 @@ class BookingPage extends StatefulWidget {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            Container(
+                                            SizedBox(
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.min,
                                                 mainAxisAlignment:
@@ -11438,14 +11439,14 @@ class BookingPage extends StatefulWidget {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      Container(
+                      SizedBox(
                         height: 270.30,
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(
+                            SizedBox(
                               width: 1096,
                               height: 46.30,
                               child: Stack(
@@ -11526,7 +11527,7 @@ class BookingPage extends StatefulWidget {
                               ),
                             ),
                             const SizedBox(height: 16),
-                            Container(
+                            SizedBox(
                               width: 1096,
                               height: 208,
                               child: Stack(
@@ -11750,7 +11751,7 @@ class BookingPage extends StatefulWidget {
                                   Positioned(
                                     left: 896.44,
                                     top: 16,
-                                    child: Container(
+                                    child: SizedBox(
                                       height: 36,
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,
@@ -12018,7 +12019,7 @@ class BookingPage extends StatefulWidget {
                                   Positioned(
                                     left: 896.44,
                                     top: 68,
-                                    child: Container(
+                                    child: SizedBox(
                                       height: 36,
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,
@@ -12286,7 +12287,7 @@ class BookingPage extends StatefulWidget {
                                   Positioned(
                                     left: 896.44,
                                     top: 120,
-                                    child: Container(
+                                    child: SizedBox(
                                       height: 36,
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,
@@ -12593,7 +12594,7 @@ class BookingPage extends StatefulWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(
+                            SizedBox(
                               width: 1094,
                               height: 124,
                               child: Stack(
@@ -12747,7 +12748,7 @@ class BookingPage extends StatefulWidget {
                           ],
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         width: 1920,
                         height: 776.34,
                         child: Stack(
@@ -13692,7 +13693,7 @@ class BookingPage extends StatefulWidget {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Container(
+                                    SizedBox(
                                       width: 1094,
                                       child: Column(
                                         mainAxisSize: MainAxisSize.min,
@@ -13887,7 +13888,7 @@ class BookingPage extends StatefulWidget {
               Positioned(
                 left: 410,
                 top: 1991,
-                child: Container(
+                child: SizedBox(
                   width: 1100,
                   height: 49,
                   child: Column(
@@ -13902,8 +13903,8 @@ class BookingPage extends StatefulWidget {
                           color: const Color(0xFFFFB700),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8)),
-                          shadows: [
-                            const BoxShadow(
+                          shadows: const [
+                            BoxShadow(
                               color: Color(0x281A1A1A),
                               blurRadius: 8,
                               offset: Offset(0, 2),
@@ -13931,7 +13932,7 @@ class BookingPage extends StatefulWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Expanded(
-                                      child: Container(
+                                      child: SizedBox(
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
@@ -14113,7 +14114,7 @@ class BookingPage extends StatefulWidget {
                                                 clipBehavior: Clip.antiAlias,
                                                 decoration:
                                                     const BoxDecoration(),
-                                                child: Row(
+                                                child: const Row(
                                                   mainAxisSize:
                                                       MainAxisSize.min,
                                                   mainAxisAlignment:
@@ -14121,9 +14122,9 @@ class BookingPage extends StatefulWidget {
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.start,
                                                   children: [
-                                                    Container(
+                                                    SizedBox(
                                                       height: 20,
-                                                      child: const Row(
+                                                      child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.min,
                                                         mainAxisAlignment:
@@ -14176,9 +14177,9 @@ class BookingPage extends StatefulWidget {
                                             ],
                                           ),
                                         ),
-                                        Container(
+                                        const SizedBox(
                                           height: double.infinity,
-                                          child: const Row(
+                                          child: Row(
                                             mainAxisSize: MainAxisSize.min,
                                             mainAxisAlignment:
                                                 MainAxisAlignment.start,
@@ -14475,8 +14476,5 @@ class BookingPage extends StatefulWidget {
   }
 
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
-  }
+  State<StatefulWidget> createState() => throw UnimplementedError();
 }

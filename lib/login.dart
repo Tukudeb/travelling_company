@@ -15,7 +15,7 @@ class FigmaToCodeApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
       ),
       home: Scaffold(
-        body: ListView(children: [
+        body: ListView(children: const [
           LoginPage(),
         ]),
       ),
@@ -24,6 +24,8 @@ class FigmaToCodeApp extends StatelessWidget {
 }
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -47,7 +49,7 @@ class LoginPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
+                    SizedBox(
                       width: 360,
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
@@ -65,14 +67,14 @@ class LoginPage extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 32),
-                          Container(
+                          SizedBox(
                             height: 274,
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Container(
+                                SizedBox(
                                   height: 60,
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
@@ -206,7 +208,7 @@ class LoginPage extends StatelessWidget {
                                   ),
                                 ),
                                 const SizedBox(height: 16),
-                                Container(
+                                SizedBox(
                                   height: 134,
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
@@ -308,7 +310,7 @@ class LoginPage extends StatelessWidget {
                                                         Clip.antiAlias,
                                                     decoration:
                                                         const BoxDecoration(),
-                                                    child: Row(
+                                                    child: const Row(
                                                       mainAxisSize:
                                                           MainAxisSize.min,
                                                       mainAxisAlignment:
@@ -318,9 +320,9 @@ class LoginPage extends StatelessWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           height: 24,
-                                                          child: const Row(
+                                                          child: Row(
                                                             mainAxisSize:
                                                                 MainAxisSize
                                                                     .min,
@@ -365,7 +367,7 @@ class LoginPage extends StatelessWidget {
                                                         Clip.antiAlias,
                                                     decoration:
                                                         const BoxDecoration(),
-                                                    child: Row(
+                                                    child: const Row(
                                                       mainAxisSize:
                                                           MainAxisSize.min,
                                                       mainAxisAlignment:
@@ -375,10 +377,10 @@ class LoginPage extends StatelessWidget {
                                                           CrossAxisAlignment
                                                               .start,
                                                       children: [
-                                                        Container(
+                                                        SizedBox(
                                                           width: 24,
                                                           height: 24,
-                                                          child: const Stack(
+                                                          child: Stack(
                                                               children: []),
                                                         ),
                                                       ],
@@ -467,7 +469,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              Container(
+              SizedBox(
                 height: 189,
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -486,9 +488,9 @@ class LoginPage extends StatelessWidget {
                           bottom: BorderSide(color: Color(0xFFE7E7E7)),
                         ),
                       ),
-                      child: Stack(
+                      child: const Stack(
                         children: [
-                          const Positioned(
+                          Positioned(
                             left: 9.67,
                             top: 17,
                             child: Text(
@@ -506,10 +508,10 @@ class LoginPage extends StatelessWidget {
                           Positioned(
                             left: 89.61,
                             top: 19,
-                            child: Container(
+                            child: SizedBox(
                               width: 261.70,
                               height: 32,
-                              child: const Stack(
+                              child: Stack(
                                 children: [
                                   Positioned(
                                     left: 217.69,
@@ -545,7 +547,7 @@ class LoginPage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          const Positioned(
+                          Positioned(
                             left: 148.31,
                             top: 35,
                             child: Text.rich(
